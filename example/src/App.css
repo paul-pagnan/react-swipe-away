@@ -1,0 +1,13 @@
+body {
+    background-color: #eee;
+}
+
+.card {
+    padding: 60px 20px;
+    background-color: white;
+}
+
+.card-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}

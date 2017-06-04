@@ -4,7 +4,7 @@
     "jsx": true,
     "modules": true
   },
-
+  "presets" : ["es2015", "react", "state-0"],
   "env": {
     "browser": true,
     "es6": true,
@@ -27,7 +27,7 @@
   "parser": "babel-eslint",
 
   "plugins": [
-    
+    "react"
   ],
 
   "rules": {
@@ -179,6 +179,8 @@
     "vars-on-top": 2,
     "wrap-iife": [2, "any"],
     "wrap-regex": 0,
-    "yoda": [2, "never"]
+    "yoda": [2, "never"],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2
   }
 }

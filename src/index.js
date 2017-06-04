@@ -1,3 +1,3 @@
-import { SwipeAway } from './SwipeAway';
+import SwipeAway from './SwipeAway';
 
 export default SwipeAway;

@@ -5,7 +5,7 @@ const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const path = require('path');
 const env  = require('yargs').argv.env; // use --env with webpack 2
 
-let libraryName = 'Library';
+let libraryName = 'react-swipe-away';
 
 let plugins = [], outputFile;
 
@@ -31,7 +31,10 @@ const config = {
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components|example)/,
+        query: {
+          presets: ['es2015', 'react', 'stage-0']
+        }
       },
       {
         test: /(\.jsx|\.js)$/,
@@ -39,10 +42,6 @@ const config = {
         exclude: /node_modules/
       }
     ]
-  },
-  resolve: {
-    modules: [path.resolve('./src')],
-    extensions: ['.json', '.js']
   },
   plugins: plugins
 };
