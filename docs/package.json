@@ -8,13 +8,17 @@
     "react-icons": "^2.2.5",
     "react-swipe-away": "0.0.2-alpha"
   },
+  "homepage": "http://paul-pagnan.github.io/react-swipe-away",
   "devDependencies": {
+    "gh-pages": "^1.0.0",
     "react-scripts": "1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
