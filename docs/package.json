@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-swipe-away": "file:../"
+    "react-icons": "^2.2.5",
+    "react-swipe-away": "0.0.2-alpha"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"

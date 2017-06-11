@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Hammer from 'react-hammerjs';
+import Hammer from './hammer';
 import sizeme from 'react-sizeme';
 import * as Util from './util';
 
@@ -259,6 +259,7 @@ SwipeAway.defaultProps = {
 export default sizeme({
     monitorWidth: true,
     monitorHeight: true,
-    refreshRate: 350
+    refreshRate: 99999999999999999,
+    noPlaceholder: true
 })(SwipeAway);
 
